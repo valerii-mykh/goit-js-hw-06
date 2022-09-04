@@ -1,0 +1,11 @@
+const categoriesEl = document.querySelectorAll('h2');
+console.log(`Number of categories: ${categoriesEl.length}`);
+const categoryEl = document.querySelectorAll('.item ul');
+const items = [];
+categoryEl.forEach(category => {items.push(category)});
+console.log(`Category: ${categoriesEl[0].textContent}`);
+console.log(`Number of Elements: ${items[0].children.length}`);
+console.log(`Category: ${categoriesEl[1].textContent}`);
+console.log(`Number of Elements: ${items[1].children.length}`);
+console.log(`Category: ${categoriesEl[2].textContent}`);
+console.log(`Number of Elements: ${items[2].children.length}`);
