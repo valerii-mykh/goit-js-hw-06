@@ -6,3 +6,8 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const list = document.querySelector("ul");
+const markup = ingredients
+  .map((ingredients) => `<li class="item">${ingredients}</li>`)
+  .join("");
+  list.innerHTML = markup;
