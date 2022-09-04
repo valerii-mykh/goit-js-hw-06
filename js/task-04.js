@@ -6,7 +6,7 @@ const counter = {
     decrement() {
         this.value -= 1;
     },
-}
+};
 const counters = document.getElementById('counter');
 
 const decrementBtn = counters.getAttribute("decrement");
