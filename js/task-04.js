@@ -7,10 +7,8 @@ const counter = {
         this.value -= 1;
     },
 };
-const counters = document.getElementById('counter');
-
-const decrementBtn = counters.getAttribute("decrement");
-const incrementBtn = counters.getAttribute("increment");
+const decrementBtn = document.querySelector("[data-action='decrement']");
+const incrementBtn = document.querySelector("[data-action='increment']");
 const valueEl = document.getElementById('value');
 
 decrementBtn.addEventListener('click', () => {
