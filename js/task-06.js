@@ -9,3 +9,5 @@ function onInputChange(even) {
     } else{elements.input.classList.add('valid');
         elements.input.classList.replace('invalid', 'valid');} 
 }
+
+// Підкажіть як достукатися до дата атрибуту, пробував, щось туплю)))
