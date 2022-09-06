@@ -1,6 +1,6 @@
 const elements = {
-    email: document.querySelector('email'),
-    password: document.querySelector('password'),
+    email: document.getElementsByClassName('email'),
+    password: document.getElementsByClassName('password'),
 }
 elements.email.addEventListener ('submit', buttonClick);
 function buttonClick(event) {
