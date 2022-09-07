@@ -34,7 +34,7 @@ const createbox = () => {
     newBox.style.margin = "10px";
     newBox.classList.add("new-box");
     boxes.append(newBox);
-  }
+  };
 };
 
 createboxBtn.addEventListener("click", createbox);
@@ -44,7 +44,7 @@ const deletebox = () => {
   // console.log(allNewBoxes);
   for (let allNewBoxe of allNewBoxes) {
     boxes.removeChild(allNewBoxe);
-  }
+  };
   baseboxSize = 30;
   // console.log(baseboxSize);
 };
