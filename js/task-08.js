@@ -8,7 +8,7 @@ function onFormSubmit(event) {
     const mail = formElements.email.name + " " + formElements.email.value;
     const password = formElements.password.name + " " + formElements.password.value;
     if (!formElements.password.value) {
-        alert ('Всі поля повинні бути заповнені!')
+        alert ('Всі поля повинні бути заповнені!');
     } else{
         console.log(mail);
         console.log(password);
