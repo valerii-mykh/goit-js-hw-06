@@ -1,13 +1,16 @@
-const elements = {
-    input: document.getElementById('validation-input'),
-   }
-   elements.input.addEventListener('input', onInputChange);
-function onInputChange(even) {
-       if (even.currentTarget.value.length > 6) {
-        elements.input.classList.replace('valid', 'invalid');
-        
-    } else{elements.input.classList.add('valid');
-        elements.input.classList.replace('invalid', 'valid');} 
-}
+const validation = document.querySelector("#validation-input");
 
-// Підкажіть як достукатися до дата атрибуту, пробував, щось туплю)))
+const addRemovePassword = (remove, add) => {
+  validation.classList.remove(`${remove}`);
+  validation.classList.add(`${add}`);
+};
+
+const validPassword = (e) => {
+  if (Number(validation.dataset.length) < e.currentTarget.value.length) {
+    addRemovePassword("valid", "invalid");
+  } else {
+    addRemovePassword("invalid", "valid");
+  }
+};
+
+validation.addEventListener("blur", validPassword);
