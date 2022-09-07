@@ -12,6 +12,6 @@ function onFormSubmit(event) {
     } else{
         console.log(mail);
         console.log(password);
-        form.reset()
-    }
+        form.reset();
+    };
 };
